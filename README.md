@@ -14,14 +14,16 @@ Summary: Scrypt for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/pylibscrypt-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/pylibscrypt-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/pylibscrypt-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/pylibscrypt-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pylibscrypt-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pylibscrypt-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/pylibscrypt-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/pylibscrypt-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/pylibscrypt-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/pylibscrypt-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pylibscrypt-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pylibscrypt-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylibscrypt/badges/version.svg)](https://anaconda.org/conda-forge/pylibscrypt)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pylibscrypt/badges/downloads.svg)](https://anaconda.org/conda-forge/pylibscrypt)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pylibscrypt-green.svg)](https://anaconda.org/conda-forge/pylibscrypt) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pylibscrypt.svg)](https://anaconda.org/conda-forge/pylibscrypt) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pylibscrypt.svg)](https://anaconda.org/conda-forge/pylibscrypt) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pylibscrypt.svg)](https://anaconda.org/conda-forge/pylibscrypt) |
 
 Installing pylibscrypt
 ======================
