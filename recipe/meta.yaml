@@ -1,6 +1,6 @@
 {% set name = "pylibscrypt" %}
-{% set version = "1.7.1" %}
-{% set sha256 = "7aa9424e211a12106c67ea884ccfe609856289372b900d3702faaf66e87f79ac" %}
+{% set version = "1.8.0" %}
+{% set sha256 = "893c4519afae05878f7aa313b76f6193e4d4b69d157b7febf6a5ef69ae3bf6e9" %}
 
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256|lower }}
 
 build:
-  number: 1001
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
