@@ -1,6 +1,6 @@
 {% set name = "pylibscrypt" %}
-{% set version = "1.8.0" %}
-{% set sha256 = "893c4519afae05878f7aa313b76f6193e4d4b69d157b7febf6a5ef69ae3bf6e9" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "5afffc2cf056de86a000c13627ddca87fac14380939694aa6fbf4875926c0146" %}
 
 
 package:
@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256|lower }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -34,8 +34,6 @@ test:
   imports:
     - pylibscrypt
   commands:
-    - conda inspect linkages -p $PREFIX pylibscrypt  # [not win]
-    - conda inspect objects -p $PREFIX pylibscrypt   # [osx]
     - python -m pylibscrypt.tests                    # [not osx]
     - python -m pylibscrypt.pylibsodium              # [not osx]
     - python -m pylibscrypt.pbkdf2                   # [not osx]
@@ -44,10 +42,10 @@ about:
   home: https://github.com/jvarho/pylibscrypt
   license: ISC
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   dev_url: https://github.com/jvarho/pylibscrypt
   doc_url: https://github.com/jvarho/pylibscrypt
-  summary: 'Scrypt for Python'
+  summary: Scrypt for Python
 
 extra:
   recipe-maintainers:
