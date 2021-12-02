@@ -13,7 +13,7 @@ source:
   sha256: {{ sha256|lower }}
 
 build:
-  number: 2
+  number: 3
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -34,8 +34,6 @@ test:
   imports:
     - pylibscrypt
   commands:
-    - conda inspect linkages -p $PREFIX pylibscrypt  # [not win]
-    - conda inspect objects -p $PREFIX pylibscrypt   # [osx]
     - python -m pylibscrypt.tests                    # [not osx]
     - python -m pylibscrypt.pylibsodium              # [not osx]
     - python -m pylibscrypt.pbkdf2                   # [not osx]
