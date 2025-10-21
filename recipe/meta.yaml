@@ -23,6 +23,7 @@ requirements:
     - pip
     - openssl                      # [not win]
     - scrypt
+    - setuptools
   run:
     - openssl                      # [not win]
     - python
